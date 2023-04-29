@@ -1,0 +1,27 @@
+@media screen and (min-width: 65em) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        float: right;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        max-width: 75%;
+    }
+
+    section:nth-child(3) {
+        grid-column: 3/4;
+        max-width: 75%;
+    }
+  }
