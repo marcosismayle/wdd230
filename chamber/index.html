@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage for Campinas Chamber of Commerce Website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Campinas Chamber of Commerce | Home </title>
+</head>
+
+<body>
+
+    <header>
+            <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.png" alt="Logo-image"></a>
+            <div>
+                <h1>Campinas</h1>
+                <h2>Chamber of Commerce</h2>
+                <p><span id="todayString"></span></p>
+            </div>
+            <div>      
+                <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-logo.png" alt="linkedin-logo-image"></a>
+                <a href="https://www.fb.com" target="_blank"><img src="images/facebook-logo.png" alt="facebook-logo-image"></a>
+            </div>
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>        
+        <ul id="primaryNav">
+            <li class="active"><a href="index.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>        
+    </nav>
+    
+    <main>
+        <div id="grid-container">
+            <Section id="hero">Hero with site name and call to action</Section>
+            <section id="event">Event</section>
+            <section id="weather">Weather</section>
+            <section id="news">News release</section>
+            <section id="spotlight">
+                <div>Spotlight 01</div>
+                <div>Spotlight 02</div>
+                <div>Spotlight 03</div>
+            </section>
+            <section id="join">Join</section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <section>
+                <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.png" alt="Logo-image"></a>
+                
+            </section>
+            
+            <section>
+                <h3>Campinas Chamber of Commerce</h3>
+                <address>Av. Anchieta, 200 - Centro Campinas - SP, 13015-100</address>
+                <a href="https://goo.gl/maps/8EKWkgr32wRgwiud7" target="_blank">&#x1F4CD;Location Map</a>
+            </section>
+            <section>
+                <h3>Contact us:</h3>
+                <a href="mailto: info@campinascc.org" target="_blank">info@campinascc.org</a>
+                <p>+55 (19) 99191-9191</p>
+            </section>
+        </div>
+        <hr>
+        <div>
+            <p>&copy; <span id="currentYear"></span> | Campinas Chamber of Commerce | Marcos Ismayle - WDD230 Project</p>
+            <p><span id="lastUpdated"></span> </p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
