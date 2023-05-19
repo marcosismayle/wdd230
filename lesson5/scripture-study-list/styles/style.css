@@ -1,15 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+:root {
+    /* Chosen colors */
+    --primary:#14213D;
+    --secondary:#FCA311;
+    --accent1:#000000;
+    --accent2:#E5E5E5;
+
+    /* Chosen fonts */
+    --heading-font: Open Sans, Arial, sans-serif;
+    --paragraph-font: Montserrat, Helvetica, sans-serif;
+
+}
+
 * {
-	margin: 0;
+    margin: 0;
 	padding: 0;
 }
 
 body {
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	font-family: Acme, Arial, sans-serif;
+    font-family: var(--paragraph-font);
+    height: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
 }
 
 h1 {
@@ -20,7 +37,7 @@ main {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
-	background-color: #ddd;
+	background-color: var(--accent2);
 	display: flex;
 	flex-direction: column;
 }
@@ -58,6 +75,31 @@ li {
 	justify-content: space-between;
 }
 
+header {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 0.75rem;
+}
+
+h1 {
+    text-shadow:3px 3px 3px var(--accent1);
+    font-family: var(--heading-font);
+    color: var(--accent2);
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+p {
+    text-align: center;
+    margin: 1rem;
+}
+
+footer {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 0.75rem;
+}
+
 @media only screen and (min-width: 32.5em) {
 	h1 {
 		font-size: 2rem;
@@ -65,5 +107,9 @@ li {
 
 	main {
 		width: 320px;
+	}
+
+	header , footer {
+		width: 82vh;
 	}
 }
