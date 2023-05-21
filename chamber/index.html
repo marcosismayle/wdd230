@@ -16,16 +16,19 @@
 <body>
 
     <header>
-            <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.png" alt="Logo-image"></a>
-            <div>
-                <h1>Campinas</h1>
-                <h2>Chamber of Commerce</h2>
-                <p><span id="todayString"></span></p>
+        <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.png" alt="Logo-image"></a>
+        <div>
+            <div id="banner">
+                <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
             </div>
-            <div>      
-                <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-logo.png" alt="linkedin-logo-image"></a>
-                <a href="https://www.fb.com" target="_blank"><img src="images/facebook-logo.png" alt="facebook-logo-image"></a>
-            </div>
+            <h1>Campinas</h1>
+            <h2>Chamber of Commerce</h2>
+            <p><span id="todayString"></span></p>
+        </div>
+        <div>      
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-logo.png" alt="linkedin-logo-image"></a>
+            <a href="https://www.fb.com" target="_blank"><img src="images/facebook-logo.png" alt="facebook-logo-image"></a>
+        </div>
     </header>
     <nav>
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>        
@@ -39,10 +42,27 @@
     
     <main>
         <div id="grid-container">
-            <Section id="hero">Hero with site name and call to action</Section>
-            <section id="event">Event</section>
-            <section id="weather">Weather</section>
-            <section id="news">News release</section>
+            <Section class="hero-image">
+                <div class="hero-text">
+                    <h1>Welcome to Campinas</h1>
+                    <p>The West Princess</p>
+                    <button>Join the Chamber</button>
+                </div>
+            </Section>
+            <section class="event">
+                <div class="hero-text">
+                    <h1>Ribbon Cutting</h1>
+                    <p>Business.sa</p>
+                    <a href="#">more info..</a>
+                </div>
+            </section>
+            <section class="weather">
+                <img src="images/weather.png" alt="">
+            </section>
+            <section class="news">
+                <h1>News Release</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pellentesque dolor. Sed nec eros eu lectus tincidunt placerat. Sed hendrerit consequat justo, vel euismod mi faucibus vel. Praesent laoreet id diam eu consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </section>
             <section id="spotlight">
                 <div>Spotlight 01</div>
                 <div>Spotlight 02</div>

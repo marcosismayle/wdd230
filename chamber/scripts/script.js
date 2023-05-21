@@ -36,3 +36,13 @@ function toggleMenu() {
 
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
+
+//banner block
+
+let banner = document.getElementById('banner');
+
+if (dayOfWeek === "Monday" || dayOfWeek === "Tuesday") {
+    banner.style.display = "block";
+} else {
+    banner.style.display = "none";
+}
