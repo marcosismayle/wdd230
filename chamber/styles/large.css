@@ -49,24 +49,24 @@
     grid-row: 3/4;
   }
 
-  main section#spotlight {
+  main section.spotlight {
     grid-column: 4/5;
     grid-row: 1/4;
     display: block;
     height: auto;
   }
 
-  main section#join {
+  main section.join {
     grid-column: 1/2;
     grid-row: 3/4;
   }
 
-  main section#spotlight div {
+  main section.spotlight div {
     margin: 5px;
     height: 32%;
     width: 95%;
   }
-  main section#spotlight div:nth-child(3) {
+  main section.spotlight div:nth-child(3) {
     display: block;
   }
 
