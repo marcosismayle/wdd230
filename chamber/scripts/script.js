@@ -19,11 +19,11 @@ document.getElementById("lastUpdated").innerHTML = dateString;
 
 let today = new Date();
 let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let dayOfWeek = weekdays[today.getUTCDay()];
-let day = today.getUTCDate();
+let dayOfWeek = weekdays[today.getDay()];
+let day = today.getDate();
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-let monthString = months[today.getUTCMonth()];
-let todayCurrentYear = today.getUTCFullYear();
+let monthString = months[today.getMonth()];
+let todayCurrentYear = today.getFullYear();
 let todayString = dayOfWeek + ", " + day + " " + monthString + " " + year;
 
 document.getElementById("todayString").innerHTML = todayString;
@@ -46,3 +46,9 @@ if (dayOfWeek === "Monday" || dayOfWeek === "Tuesday") {
 } else {
     banner.style.display = "none";
 }
+
+function closeBtn() {
+    document.getElementById("banner").style.display = "none";
+  }
+
+document.getElementById("closeBtn").addEventListener("click", closeBtn);

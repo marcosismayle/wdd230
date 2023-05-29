@@ -15,12 +15,14 @@
 
 <body>
 
+    <div id="banner">
+        <button id="closeBtn"><span>X</span></button>
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
     <header>
         <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.png" alt="Logo-image"></a>
         <div>
-            <div id="banner">
-                <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-            </div>
+            
             <h1>Campinas</h1>
             <h2>Chamber of Commerce</h2>
             <p><span id="todayString"></span></p>
@@ -43,7 +45,7 @@
     <main>
         <div id="grid-container">
             <Section class="hero-image">
-                <figure class="myphoto">
+                <figure>
                     <img src="images/wdd230-org-assets/wdd230-org.jpg" alt="" sizes="100vw"
                     srcset="images/wdd230-org-assets/wdd230-org-small.jpg 500w, 
                             images/wdd230-org-assets/wdd230-org-medium.jpg 800w,
@@ -57,14 +59,17 @@
                 </div>
             </Section>
             <section class="event">
-                <div class="hero-text">
+                <div>
                     <h1>Ribbon Cutting</h1>
                     <p>Business.sa</p>
                     <a href="#">more info..</a>
                 </div>
             </section>
             <section class="weather">
-                <img src="images/weather.png" alt="">
+                <h2>Weather</h2>
+                <p>Temperature: <span id="tempInput">45</span> °F</p>
+                <p>Wind Speed: <span id="speedInput">4</span> mph</p>
+                <p>Wind Chill: <span id="output"></span></p>
             </section>
             <section class="news">
                 <h1>News Release</h1>

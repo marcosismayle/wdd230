@@ -65,6 +65,16 @@ header .logo {
   width: 70px;
 }
 
+#banner {
+  background-color: var(--accent1-color);
+  font-family: var(--paragraph-font);
+}
+
+div button#closeBtn {
+  color: #000000;
+  float: right;
+}
+
 /* Navigation */
 
 h1, p {
@@ -154,6 +164,19 @@ main section.join {
   display: none;
 }
 
+section.hero-image figure {
+  max-width: 100%;
+}
+
+section.hero-image img {
+  max-width: 100%;
+  height: fit-content;
+}
+
+section.hero-image figcaption {
+  float: right;
+}
+
 /* The hero image 
 section.hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/campinas-downtown-opt.jpg");
@@ -163,7 +186,7 @@ section.hero-image {
 
 section div.hero-text {
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
