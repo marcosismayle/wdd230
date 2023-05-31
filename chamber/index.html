@@ -20,7 +20,7 @@
         <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     </div>
     <header>
-        <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.png" alt="Logo-image"></a>
+        <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.webp" alt="Logo-image"></a>
         <div>
             
             <h1>Campinas</h1>
@@ -44,61 +44,79 @@
     
     <main>
         <div id="grid-container">
-            <Section class="hero-image">
-                <figure>
-                    <img src="images/wdd230-org-assets/wdd230-org.jpg" alt="" sizes="100vw"
-                    srcset="images/wdd230-org-assets/wdd230-org-small.jpg 500w, 
-                            images/wdd230-org-assets/wdd230-org-medium.jpg 800w,
-                            images/wdd230-org-assets/wdd230-org-large.jpg 1100w,">
-                    <figcaption>The Garden Tomb</figcaption>
-                </figure>
-                <div class="hero-text">
-                    <h1>Welcome to Campinas</h1>
-                    <p>The West Princess</p>
-                    <button>Join the Chamber</button>
-                </div>
-            </Section>
+            <figure class="hero-image">
+                <img src="images/wdd230-org-assets/wdd230-org.jpg" alt="employes on a meeting"
+                sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, 1100px"
+                srcset="images/wdd230-org-assets/wdd230-org-small.jpg 500w, 
+                        images/wdd230-org-assets/wdd230-org-medium.jpg 800w,
+                        images/wdd230-org-assets/wdd230-org-large.jpg 1100w">
+            </figure>
             <section class="event">
                 <div>
-                    <h1>Ribbon Cutting</h1>
-                    <p>Business.sa</p>
-                    <a href="#">more info..</a>
+                    <h2>Ribbon Cutting</h2>
+                    <h3>Business.sa</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pellentes que dolor.</p>
+                    <p><a href="#">more info...</a></p>
                 </div>
             </section>
             <section class="weather">
-                <h2>Weather</h2>
-                <p>Temperature: <span id="tempInput">45</span> °F</p>
-                <p>Wind Speed: <span id="speedInput">4</span> mph</p>
-                <p>Wind Chill: <span id="output"></span></p>
+                <div>
+                    <h2>Weather</h2>
+                    <div class="temp">
+                        <img src="images/weather.png" alt="">
+                        <p><span id="tempInput">45</span> °F</p>
+                    </div>
+                    <hr>
+                    <div class="speed">
+                        <p>Wind Speed: <span id="speedInput">4</span> mph</p>
+                        <p>Wind Chill: <span id="output"></span></p>
+                    </div>
+                </div>
+                
             </section>
             <section class="news">
-                <h1>News Release</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pellentesque dolor. Sed nec eros eu lectus tincidunt placerat. Sed hendrerit consequat justo, vel euismod mi faucibus vel. Praesent laoreet id diam eu consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <h2>News Release</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pellentes que dolor. Sed nec eros eu lectus tincidunt placerat. Sed hendrerit consequat justo, vel euismod mi faucibus vel.</p>
             </section>
             <section class="spotlight">
-                <div>
-                    <h1>Some Business here</h1>
+                <div class="spot1">
+                    <h2>ABC Kindergarden</h2>
+                    <p class="icon">📚</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <hr>
+                    <p>contato@abc.com</p>
+                    <p>555-555-555 | Site</p>
                 </div>
-                <div>
-                    <h1>Some business here</h1>
+                <div class="spot2">
+                    <h2>Hardware Store</h2>
+                    <p class="icon">🧰</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <hr>
+                    <p>contato@hardware.com</p>
+                    <p>777-777-777 | Site </p>
                 </div>
-                <div>
-                    <h1>Some business here</h1>
+                <div class="spot3">
+                    <h2>Music Store</h2>
+                    <p class="icon">🎹</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <hr>
+                    <p>contato@music.com</p>
+                    <p>444-444-444 | Site</p>
                 </div>
             </section>
             <section class="join">
+                <h2>Discover how we can help your business.</h2>
                 <button>Join Us!</button>
-                <p>Discover how we can help your business.</p>
             </section>
         </div>
     </main>
 
     <footer>
         <div class="footer-grid">
-            <section>
-                <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.png" alt="Logo-image"></a>
+            <div>
+                <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.webp" alt="Logo-image"></a>
                 
-            </section>
+            </div>
             
             <section>
                 <h3>Campinas Chamber of Commerce</h3>
@@ -119,6 +137,7 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 

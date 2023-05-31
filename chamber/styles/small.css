@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--headline-color-on-white);
 }
 
+p {
+  font-family: var(--paragraph-font);
+}
+
 header {
   display: flex;
   align-items: center;
@@ -142,18 +146,30 @@ nav ul.open {
 
 /* end Navigation */
 
-main section{
+main section, figure{
   background-color: var(--accent2-color);
   border:solid 1px black;
   margin: 0.5em;
   height: 200px;
 }
 
+main section.spotlight {
+  background-color: var(--accent2-color);
+  border:solid 1px black;
+  height: 415px;
+}
+
 main section.spotlight div {
   background-color: var(--accent2-color);
   border:solid 1px black;
   margin: 3%;
-  height: 5em;
+  height: 190px;
+  text-align: center;
+  font-size: .8rem;
+}
+
+main section.spotlight p.icon {
+  font-size: 2.5rem;
 }
 
 main section div:nth-child(3) {
@@ -164,17 +180,14 @@ main section.join {
   display: none;
 }
 
-section.hero-image figure {
-  max-width: 100%;
+figure figcaption {
+  text-align: center;
 }
 
-section.hero-image img {
-  max-width: 100%;
-  height: fit-content;
-}
-
-section.hero-image figcaption {
-  float: right;
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* The hero image 
@@ -182,7 +195,7 @@ section.hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/campinas-downtown-opt.jpg");
   background-position: center;
   background-size: cover;
-}*/
+}
 
 section div.hero-text {
   text-align: center;
@@ -207,33 +220,66 @@ section div.hero-text {
   background-color: #555;
   color: white;
 }
-
+*/
 /*Event*/
 
-.event {
+section.event {
   background-color: var(--accent1-color);
-}
-
-.weather img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.news , .spotlight{
-  background-color: var(--accent1-color);
-}
-
-.join {
   text-align: center;
-  background-color: var(--paragraph-background-color);
-  color: var(--accent2-color);
-  font-size: 20px;
 }
 
-.join button {
-  margin-top: 10vh;
-  width: 40vh;
+section.event div {
+  padding-top: 2rem;
+}
+
+section.weather {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rain-opt.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+section.weather div.temp{
+  display: flex;
+  font-size: 2em;
+}
+
+section.weather div.temp p{
+  
+  color: var(--accent2-color);
+  margin: auto;
+}
+
+section.weather div img{
+  width: 6rem;
+  margin: auto;
+}
+
+section.weather div h2{
+  color: var(--accent2-color);
+  text-align: center;
+  padding-top: 1.2rem;
+}
+
+hr{
+  color: var(--accent2-color);
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  width: 80%;
+}
+
+section.weather div.speed{
+  color: var(--accent2-color);
+  text-align: center;
+}
+
+.news {
+  background-color: var(--accent1-color);
+  text-align: center;
+}
+
+.news h2 {
+  margin-top: 3vh;
 }
 
 footer {
