@@ -86,4 +86,15 @@
     padding: 1vw;
   }
 
+
+  th, td {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  .photo-card:hover {
+    transform: scale(1.05);
+}
+
 }

@@ -320,3 +320,96 @@ footer div:nth-child(3) {
   color: var(--paragraph-color-on-color);
   font-size: .7em;
 }
+
+/* discover.html */
+
+.demography ,.discovery h1{
+  text-align: center;
+}
+
+
+
+section.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: unset;
+  border:none;
+  margin: 1em;
+  height: auto;
+}
+
+.discovery img {
+  width: 100%;
+}
+
+.discovery img.map{
+  width: 80%;
+  margin-top: 2rem;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+img {
+filter: blur(0em);
+transition: filter 0.5s;
+}
+
+.photo-card {
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 75%;
+  border: solid var(--accent1);
+  background-color: var(--secondary);
+  box-shadow: 5px 5px 10px #6f7364;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.photo-card p {
+  margin: 15px;
+}
+
+/* Table*/
+
+table {
+  border-collapse: collapse;
+  max-width: 95%;
+  margin: 30px auto;
+}
+
+th, td {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  font-size: 12px;
+  background-color: var(--primary-color);
+  color: var(--paragraph-color-on-color);
+}
+
+th h3 {
+  color: var(--paragraph-color-on-color);
+}
+
+/* Number of visits */
+
+div.visits-div {
+  text-align: center;
+}
+
+.label {
+	font-family: var(--paragraph-font);
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+}
