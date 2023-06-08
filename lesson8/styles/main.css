@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+:root {
+    /* Chosen colors */
+    --primary:#14213D;
+    --secondary:#FCA311;
+    --accent1:#000000;
+    --accent2:#E5E5E5;
+
+    /* Table chosen colors */
+	--back: rgb(24, 34, 70);
+    --back2: hsla(221, 57%, 35%, 0.61);
+	--border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(223, 22%, 84%);
+
+    /* Chosen fonts */
+    --heading-font: Open Sans, Arial, sans-serif;
+    --paragraph-font: Montserrat, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--accent2);
+    font-family: var(--paragraph-font);
+    height: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    border: solid var(--primary);
+}
+
+header {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 0.75rem;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+	font-size: .85rem;
+}
+
+tr:first-child th, th:nth-child(1) {
+	background-color: var(--back);
+	color: var(--accent2);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
+
+
+h1 {
+    text-shadow:3px 3px 3px var(--accent1);
+    font-family: var(--heading-font);
+    color: var(--accent2);
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+p {
+    text-align: center;
+    margin: 1rem;
+}
+
+footer {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 0.75rem;
+}
