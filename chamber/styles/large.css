@@ -77,4 +77,14 @@
     display: block;
   }
 
+  .form {
+    display: flex;
+  }
+
+  .membershipLevels {
+    width: 90%;
+    max-width: 550px;
+    max-height: 500px;
+  }
+
 }
