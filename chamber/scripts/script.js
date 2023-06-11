@@ -74,3 +74,11 @@ numVisits++;
 
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
+
+
+// Process current date and time that the form was loaded by the user
+
+document.addEventListener("DOMContentLoaded", function() {
+    var timeLoaded = document.getElementById("timeLoaded");
+    timeLoaded.value = today.toISOString();
+  });
