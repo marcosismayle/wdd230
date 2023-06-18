@@ -1,4 +1,4 @@
-const localData = 'https://github.com/marcosismayle/wdd230/blob/main/chamber/json/data.json';
+const localData = '/wdd230/blob/main/chamber/json/data.json';
 
 async function getCompanyData(localData) {
     const response = await fetch(localData);
