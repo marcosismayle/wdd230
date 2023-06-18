@@ -47,9 +47,6 @@ getCompanyData(localData)
   .then((companies) => {  // handle the successful response from the API
     displayCompanies(companies); //display the prophets' data on the web page.
   })
-  .catch((error) => { // to handle any errors that may occur during the API request.
-    console.error('Error:', error);
-  });
 
 // Switch grid to list
 
