@@ -1,4 +1,17 @@
-const localData = "/chamber/json/data.json";
+var requestURL = "/chamber/json/data.json";
+
+var request = new XMLHttpRequest();
+
+request.open('GET', requestURL);
+
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+  var companies = request.response;
+  displayCompanies(companies);
+}
+
 
 async function getCompanyData(requestURL) {
     const response = await fetch(requestURL);
