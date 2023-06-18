@@ -1,7 +1,21 @@
-const localData = "/chamber/json/data.json";
+var requestURL = '/chamber/json/data.json';
 
-async function getCompanyData(localData) {
-    const response = await fetch(localData);
+var request = new XMLHttpRequest();
+
+request.open('GET', requestURL);
+
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+  var companies = request.response;
+  displayCompanies(companies);
+}
+
+
+
+async function getCompanyData(requestURL) {
+    const response = await fetch(requestURL);
     const data = await response.json();
     return data.companies;
 }
@@ -43,7 +57,7 @@ const displayCompanies = (companies) => {
 
 
 // The API was not working, so I used chatGPT to get what happens
-getCompanyData(localData) 
+getCompanyData(requestURL) 
   .then((companies) => {  // handle the successful response from the API
     displayCompanies(companies); //display the prophets' data on the web page.
   })
