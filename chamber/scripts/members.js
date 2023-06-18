@@ -1,4 +1,4 @@
-const localData = "/chamber/json/data.json";
+const localData = "./chamber/json/data.json";
 
 async function getCompanyData(localData) {
     const response = await fetch(localData);
