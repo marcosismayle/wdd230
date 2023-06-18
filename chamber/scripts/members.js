@@ -1,4 +1,4 @@
-var requestURL = "/chamber/json/data.json";
+const requestURL = "/chamber/json/data.json";
 
 var request = new XMLHttpRequest();
 
