@@ -1,4 +1,4 @@
-const requestURL = "/chamber/json/data.json";
+const requestURL = "chamber/json/data.json";
 
 async function getCompanyData(requestURL) {
   try {
