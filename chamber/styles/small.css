@@ -571,7 +571,10 @@ a {
   text-decoration: none;
   font-family: var(--paragraph-font);
   color: var(--accent1-color);
-  font-size: .8rem;
+}
+
+.grid a {
+  font-size: .7rem;
 }
 
 /**************************************/
@@ -643,7 +646,6 @@ div.grid h2 {
 
 div.grid p {
   font-size: .7rem;
-  padding: auto 1em 1em;
 }
 
 .directory {
