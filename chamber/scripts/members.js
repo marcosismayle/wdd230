@@ -1,81 +1,64 @@
 const requestURL = "/chamber/json/data.json";
 
-var request = new XMLHttpRequest();
-
-request.open('GET', requestURL);
-
-request.responseType = 'json';
-request.send();
-
-request.onload = function() {
-  var companies = request.response;
-  displayCompanies(companies);
-}
-
-
 async function getCompanyData(requestURL) {
+  try {
     const response = await fetch(requestURL);
     const data = await response.json();
     return data.companies;
+  } catch (error) {
+    console.error('Error:', error);
+  }
 }
 
-  
 const displayCompanies = (companies) => {
-    const grid = document.querySelector('div.grid');
-  
-    companies.forEach((company) => {
-      // Create elements to add to the div.cards element
-      let card = document.createElement('section');
-      let logo = document.createElement('img')
-      let name = document.createElement('h2');
-      let address = document.createElement('p');
-      let phone = document.createElement('p');      
-      let website = document.createElement('a');
-  
+  const grid = document.querySelector('div.grid');
 
-      name.innerHTML = `${company.name}`;
-      address.innerHTML = `${company.address}`;
-      phone.innerHTML = `${company.phone}`;
-      website.innerHTML = `${company.website}`;
-      website.href = `${company.website}`;
-  
+  companies.forEach((company) => {
+    let card = document.createElement('section');
+    let logo = document.createElement('img');
+    let name = document.createElement('h2');
+    let address = document.createElement('p');
+    let phone = document.createElement('p');
+    let website = document.createElement('a');
 
-      logo.setAttribute('src', company.imageurl);
-      logo.setAttribute('alt', `Logo of ${company.name}`);
-      logo.setAttribute('loading', 'lazy');
+    name.textContent = company.name;
+    address.textContent = company.address;
+    phone.textContent = company.phone;
+    website.textContent = company.website;
+    website.href = company.website;
 
-      card.appendChild(logo);
-      card.appendChild(name);
-      card.appendChild(address);
-      card.appendChild(phone);
-      card.appendChild(website);
-  
-      grid.appendChild(card);
-    }); 
-} 
+    logo.setAttribute('src', company.imageurl);
+    logo.setAttribute('alt', `Logo of ${company.name}`);
+    logo.setAttribute('loading', 'lazy');
 
+    card.appendChild(logo);
+    card.appendChild(name);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(website);
 
-// The API was not working, so I used chatGPT to get what happens
-getCompanyData(requestURL) 
-  .then((companies) => {  // handle the successful response from the API
-    displayCompanies(companies); //display the prophets' data on the web page.
-  })
-  .catch((error) => { // to handle any errors that may occur during the API request.
-    console.error('Error:', error);
+    grid.appendChild(card);
   });
+};
 
-// Switch grid to list
+async function loadData() {
+  try {
+    const companies = await getCompanyData(requestURL);
+    displayCompanies(companies);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+loadData();
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector(".grid");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+  display.classList.add("grid");
+  display.classList.remove("list");
 });
 
 listbutton.addEventListener("click", () => {
