@@ -37,4 +37,16 @@
       font-size: 18px;
     }
 
+    img.large {
+      width: 95%;
+    }
+
+    img.medium {
+      width: 80%;
+    }
+
+    img.small {
+      width: 30%;
+    }
+
   }

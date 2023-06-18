@@ -1,0 +1,76 @@
+{
+    "companies": [
+      {
+        "name": "Mercado Municipal de Campinas",
+        "address": "Av. Benjamin Constant, s/n - Centro, Campinas - SP, 13013-010",
+        "phone": "(19) 3232-3679",
+        "website": "https://conheca.campinas.sp.gov.br/pois/294",
+        "imageurl": "https://conheca.campinas.sp.gov.br/images/front_end/logo_prefeitura.png",
+        "level": "x"
+      },
+      {
+        "name": "Savegnago Supermercados",
+        "address": "R. Mário Siqueira, 221 - Botafogo, Campinas - SP, 13020-210",
+        "phone": "(19) 3233-1601",
+        "website": "https://www.savegnago.com.br",
+        "imageurl": "https://savegnagoio.vtexassets.com/assets/vtex/assets-builder/savegnagoio.store-theme/6.0.3/imgs/header/logo-desktop___a8be62564836c2814e16064134349a0f.svg",
+        "level": "x"
+      },
+      {
+        "name": "Unimart Shopping Campinas",
+        "address": "Av. Império do Sol Nascente, 350 - Chácara da República, Campinas - SP, 13033-000",
+        "phone": "(19) 3744-5000",
+        "website": "http://www.unimart.com.br/",
+        "imageurl": "http://gsobmidia.com.br/uploads/shoppings/10/logo_1610072119.png",
+        "level": "x"
+      },
+      {
+        "name": "Shopping Parque das Bandeiras",
+        "address": "Av. John Boyd Dunlop, 3900 - Jardim Ipaussurama, Campinas - SP, 13060-803",
+        "phone": "(19) 3728-4000",
+        "website": "https://www.shoppingparquedasbandeiras.com.br/",
+        "imageurl": "https://www.shoppingparquedasbandeiras.com.br/sites/parque-das-bandeiras/files/shopping-media/Cabe%C3%A7alho%20e%20Rodap%C3%A9/Logo_Shopping_Parque_Das_Bandeiras_9.png",
+        "level": "x"
+      },
+      {
+        "name": "Parque D. Pedro Shopping",
+        "address": "Av. Guilherme Campos, 500 - Jardim Santa Genebra, Campinas - SP, 13087-901",
+        "phone": "(19) 3500-2665",
+        "website": "https://parquedpedro.com.br/",
+        "imageurl": "https://parquedpedro.com.br/data/files/D5/66/E4/94/F10C5810771DB958180808FF/LOGO%20PRETO%20E%20BRANCO.png",
+        "level": "x"
+      },
+      {
+        "name": "Campinas Shopping",
+        "address": "R. Jacy Teixeira de Camargo, 940 - Jardim do Lago, Campinas - SP, 13050-913",
+        "phone": "",
+        "website": "https://www.campinasshopping.com.br/",
+        "imageurl": "https://www.campinasshopping.com.br/img/logo_white_header.png",
+        "level": "x"
+      },
+      {
+        "name": "Selfie Store",
+        "address": "Av. João Erbolato, 130 - Jardim Chapadão, Campinas - SP, 13070-070",
+        "phone": "(19) 99895-1862",
+        "website": "https://www.selfiestore.com.br/",
+        "imageurl": "https://d3ugyf2ht6aenh.cloudfront.net/stores/002/757/088/themes/common/logo-1734722816-1675131662-6800453d5912824e97e799dfec6f1b941675131662-320-0.png?0",
+        "level": "x"
+      },
+      {
+        "name": "Shopping Cabos Materiais Elétricos",
+        "address": "Av. Nossa Sra. de Fátima, 978 - Taquaral, Campinas - SP, 13076-000",
+        "phone": "(19) 98829-9004",
+        "website": "https://shoppingcabos.com.br/",
+        "imageurl": "https://shoppingcabos.com.br/wp-content/uploads/2023/04/logo-150x55-Laranja-e-Azul-Claro-1.png",
+        "level": "x"
+      },
+      {
+        "name": "Taberna Do Portuga",
+        "address": "Avenida Hermínia de Andrade Couto e Silva Parque, 23 - Fazenda São Quirino, Campinas - SP, 13088-340",
+        "phone": "(19) 3256-2235",
+        "website": "http://tabernadoportuga.com.br/",
+        "imageurl": "http://tabernadoportuga.com.br/wp-content/uploads/2020/02/logo.png",
+        "level": "x"
+      }
+    ]
+  }
