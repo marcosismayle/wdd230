@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+:root {
+    /* Chosen colors */
+    --primary:#14213D;
+    --secondary:#FCA311;
+    --accent1:#000000;
+    --accent2:#E5E5E5;
+
+    /* Chosen fonts */
+    --heading-font: Open Sans, Arial, sans-serif;
+    --paragraph-font: Montserrat, Helvetica, sans-serif;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--accent2);
+    font-family: var(--paragraph-font);
+    height: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+header {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 0.75rem;
+}
+
+header img{
+    box-shadow: 0 0 30px var(--accent1);
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+main ul{
+    padding: 3rem;
+    max-width: 45rem;
+    margin-left: 2rem;
+}
+
+h1 {
+    text-shadow:3px 3px 3px var(--accent1);
+    font-family: var(--heading-font);
+    color: var(--accent2);
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+p {
+    text-align: center;
+    margin: 1rem;
+}
+
+footer {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 0.75rem;
+}
