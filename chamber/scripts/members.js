@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const localData = "/chamber/json/data.json";
+  const urlData = "https://marcosismayle.github.io/json-companies-data/data.json";
 
-  async function getCompanyData(localData) {
-    const response = await fetch(localData);
+  async function getCompanyData(urlData) {
+    const response = await fetch(urlData);
     const data = await response.json();
     return data.companies;
   }
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  getCompanyData(localData)
+  getCompanyData(urlData)
     .then((companies) => {
       displayCompanies(companies);
     });
