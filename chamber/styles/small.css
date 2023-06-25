@@ -16,12 +16,14 @@
   --headline-color-on-color: #E5E5E5; /* headlines on a colored background */ 
   --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #E5E5E5; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #14213D  ;
+  --paragraph-background-color: #14213D;
   --nav-link-color: #E5E5E5;
   --nav-background-color: #14213D;
   --nav-hover-link-color: #FCA311;
   --nav-hover-background-color: #14213D;
 }
+
+/*** General rules ***/
 
 * {
   margin: 0;
@@ -36,6 +38,32 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: var(--paragraph-font);
 }
+
+main section, figure {
+  background-color: var(--accent2-color);
+  margin: 0.5em;
+  height: 200px;
+  overflow: hidden;
+}
+
+.joinBtn {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--paragraph-font);
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+.joinBtn:hover {
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+}
+
+/*** Header ***/
 
 header {
   display: flex;
@@ -79,7 +107,7 @@ div button#closeBtn {
   float: right;
 }
 
-/* Navigation */
+/*** Navigation ***/
 
 h1, p {
   margin: 0 2vw;
@@ -144,13 +172,93 @@ nav ul.open {
   display: block;
 }
 
-/* end Navigation */
+/*** Main ***/
 
-main section, figure{
-  background-color: var(--accent2-color);
-  border:solid 1px black;
-  margin: 0.5em;
-  height: 200px;
+/*** Hero ***/
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.hero-text h2{
+  font-family: var(--heading-font);
+  color: white;
+}
+
+/*** Section Event ***/
+
+section.event {
+  background-image: url(/chamber/images/balloons.jpg);
+  background-size: cover;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+  color: var(--accent2-color);
+}
+
+section.event div {
+  padding: 1rem 2rem 0 2rem;
+}
+
+section.event p {
+  margin: 1rem 0 0 0;
+  font-size: .8em;
+}
+
+/*** Weather Section ***/
+
+section.weather {
+  background-image: url(/chamber/images/weather.jpg);
+  background-size: cover;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+  color: var(--accent1-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 40vh;
+}
+
+.weather-div #current-temp {
+  font-size: 2em;
+}
+
+.weather-div .weather-icon {
+  margin-left: 20px;
+}
+
+.weather-div .temp p {
+  font-size: .8em
+}
+
+.wind hr {
+  margin-top: 15px;
+}
+
+figcaption {
+  font-family: var(--paragraph-font);
+  text-transform: capitalize;
 }
 
 main section.spotlight {
@@ -172,105 +280,12 @@ main section.spotlight p.icon {
   font-size: 2.5rem;
 }
 
-main section div:nth-child(3) {
+main section.spotlight div:nth-child(3) {
   display: none;
 }
 
 main section.join {
   display: none;
-}
-
-figure figcaption {
-  text-align: center;
-}
-
-figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* The hero image 
-section.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/campinas-downtown-opt.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-section div.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button, .join button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover, .join button:hover {
-  background-color: #555;
-  color: white;
-}
-*/
-/*Event*/
-
-section.event {
-  background-color: var(--accent1-color);
-  text-align: center;
-}
-
-section.event div {
-  padding-top: 2rem;
-}
-
-section.weather {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rain-opt.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-section.weather div.temp{
-  display: flex;
-  font-size: 2em;
-}
-
-section.weather div.temp p{
-  
-  color: var(--accent2-color);
-  margin: auto;
-}
-
-section.weather div img{
-  width: 6rem;
-  margin: auto;
-}
-
-section.weather div h2{
-  color: var(--accent2-color);
-  text-align: center;
-  padding-top: 1.2rem;
-}
-
-hr{
-  color: var(--accent2-color);
-  margin: auto;
-  margin-top: 2rem;
-  margin-bottom: .5rem;
-  width: 80%;
-}
-
-section.weather div.speed{
-  color: var(--accent2-color);
-  text-align: center;
 }
 
 .news {

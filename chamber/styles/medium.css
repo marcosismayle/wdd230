@@ -1,30 +1,67 @@
 @media only screen and (min-width: 32.5rem) {
 
+  /*** General rules ***/
+
+  /*** Header ***/
+
   header p {
     padding: 1vw;
     font-size: 12px;
   }
 
+  /*** Navigation ***/
 
+  /*** Main ***/
 
   main #grid-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    row-gap: 2px;
   }
+
+  /*** Hero ***/
 
   main figure.hero-image {
     grid-column: 1/3;
   }
+
+  /*** Event Section ***/
+
 
   main section.event {
     grid-column: 1/2;
     grid-row: 5/6;
   }
 
+  /*** Weather Section ***/
+
   main section.weather {
     grid-column: 2/3;
     grid-row: 5/6;
+  }
+
+  .weather-div h2{
+    font-size: 1em;
+  }
+  
+  .weather-div #current-temp {
+    font-size: 3em;
+  }
+  
+  .weather-div .weather-icon {
+    margin-left: 15px;
+    font-size: .8em;
+  }
+  
+  .weather-div .temp p {
+    font-size: .6em
+  }
+  
+  .weather-div .wind p {
+    font-size: .8em
+  }
+
+  figcaption {
+    font-size: .8em;
   }
 
   main section.news {
@@ -66,14 +103,6 @@
     margin-top: 3.4rem;
     color: var(--primary-color);
     font-size: 20px;
-  }
-  
-  .join button {
-    background-color: var(--accent1-color);
-    width: 80%;
-    height: 30px;
-    font-family: var(--paragraph-font);
-    color: var(--primary-color);
   }
 
   .footer-grid {

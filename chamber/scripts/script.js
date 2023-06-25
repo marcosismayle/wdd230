@@ -82,3 +82,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var timeLoaded = document.getElementById("timeLoaded");
     timeLoaded.value = today.toISOString();
   });
+
+// Join button
+
+function redirectToPage() {
+    window.location.href = "/chamber/join.html";
+}

@@ -46,34 +46,44 @@
     <main>
         <div id="grid-container">
             <figure class="hero-image">
-                <img src="images/wdd230-org-assets/wdd230-org.jpg" alt="employes on a meeting"
-                sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, 1100px"
-                srcset="images/wdd230-org-assets/wdd230-org-small.jpg 500w, 
-                        images/wdd230-org-assets/wdd230-org-medium.jpg 800w,
-                        images/wdd230-org-assets/wdd230-org-large.jpg 1100w">
+                <img src="images/hero-img.jpg" alt="man giving a hand shake"
+                sizes="(max-width: 500px) 500px, (max-width: 800px) 800px,(max-width: 1100px) 1100px"
+                srcset="images/hero-img-500x333.jpg, 
+                        images/hero-img-800x533,
+                        images/hero-img-1100x333 1100w">
+                        <div class="hero-text">
+                            <h2 style="font-size:50px">Welcome</h2>
+                            <p>Join Campinas Chamber of Commerce today</p>
+                            <button class="joinBtn" onclick="redirectToPage()">Join us</button>
+                        </div>
             </figure>
             <section class="event">
                 <div>
                     <h2>Ribbon Cutting</h2>
-                    <h3>Business.sa</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pellentes que dolor.</p>
+                    <h3>ABC Kindergarden</h3>
+                    <p>Join us for this momentous occasion as we embark on a journey to provide exceptional early childhood education in a nurturing environment. Your presence would make the event truly special.</p>
                     <p><a href="#">more info...</a></p>
                 </div>
             </section>
             <section class="weather">
-                <div>
-                    <h2>Weather</h2>
+                <div class="weather-div">
                     <div class="temp">
-                        <img src="images/weather.png" alt="">
-                        <p><span id="tempInput">45</span> °F</p>
+                        <h2><span id="region"></span></h2>
+                        <p><span id="current-temp"></span> °F</p>
+                        <p>Feels like:<span id="feels-like"></span> °F</p>
                     </div>
-                    <hr>
-                    <div class="speed">
-                        <p>Wind Speed: <span id="speedInput">4</span> mph</p>
-                        <p>Wind Chill: <span id="output"></span></p>
+
+                    <div class="weather-icon">
+                        <img src="" alt="" id="weather-icon" />
+                        <figcaption></figcaption>
+                    </div>
+                    
+                    <div class="wind">
+                        <hr>
+                        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                        <p>Wind Chill: <span id="wind-chill"></span></p>
                     </div>
                 </div>
-                
             </section>
             <section class="news">
                 <h2>News Release</h2>
@@ -107,7 +117,7 @@
             </section>
             <section class="join">
                 <h2>Discover how we can help your business.</h2>
-                <button>Join Us!</button>
+                <button class="joinBtn" onclick="redirectToPage()">Join us</button>
             </section>
         </div>
     </main>
@@ -138,7 +148,7 @@
     </footer>
 
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 
