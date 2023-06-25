@@ -204,7 +204,7 @@ nav ul.open {
 /*** Section Event ***/
 
 section.event {
-  background-image: url(/chamber/images/balloons.jpg);
+  background-image: url(https://marcosismayle.github.io/wdd230/chamber/images/balloons.jpg);
   background-size: cover;
   text-align: left;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
@@ -223,7 +223,7 @@ section.event p {
 /*** Weather Section ***/
 
 section.weather {
-  background-image: url(/chamber/images/weather.jpg);
+  background-image: url(https://marcosismayle.github.io/wdd230/chamber/images/weather.jpg);
   background-size: cover;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
   color: var(--accent1-color);
