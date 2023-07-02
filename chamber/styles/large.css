@@ -31,7 +31,6 @@
 
   main {
     margin: auto;
-    max-width: 60rem;
   }
 
   main #grid-container {
@@ -103,11 +102,17 @@
     display: block;
   }
 
-  .form {
+  .join-form {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
   }
 
-  .membershipLevels {
+  table.membershipLevels .vertical {
+    writing-mode: unset;
+  }
+
+  table.membershipLevels {
     width: 90%;
     max-width: 550px;
     max-height: 500px;
@@ -116,6 +121,53 @@
   .list section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /*********Contact*************/
+
+  .contact h2 {
+    text-align: center;
+    margin: 1em;
+  }
+
+  form.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form.contact-form .label {  
+    margin: 2em;  
+    width: 25vw;
+  }
+
+  form.contact-form img {
+    display: unset;
+    margin: 2em;
+  }
+
+  form.contact-form fieldset{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+  }
+
+  section.contact-us .contact-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  section.map iframe{
+    width: 90%;
+    height: 50vh;
+  }
+
+  section.demography {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
 }

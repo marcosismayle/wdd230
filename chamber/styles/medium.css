@@ -93,16 +93,15 @@
     text-align: center;
     font-size: .8rem;
   }
-
-  .join {
-    text-align: center;
-    background-color: var(--accent2-color);
-  }
   
   .join h2{
     margin-top: 3.4rem;
     color: var(--primary-color);
     font-size: 20px;
+  }
+  
+  table.membershipLevels {
+    font-size: 1em;
   }
 
   .footer-grid {
@@ -116,10 +115,14 @@
   }
 
 
-  th, td {
+  table.demography-table th, td {
     display: table-cell;
     border: 1px solid black;
     padding: 8px;
+  }
+
+  .demography img {
+    max-width: 500px;
   }
 
   .photo-card:hover {

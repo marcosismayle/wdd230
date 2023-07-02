@@ -43,110 +43,114 @@
         </ul>        
     </nav>
     
-    <main class="form">
+    <main class="join">
+        <h2>Membership Application Form</h2>
         
-        <form method="get" action="thankyou.html">
-            <h1>Membership Application Form</h1>
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Business Position Title: <input type="text" name="position" pattern="^(?:[a-zA-Z\- ]{7,})?$"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="email@email.com" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required></label>
-                <label class="top">Business Name* <input type="text" name="business" required></label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Choose Membership Level</legend>
-                
-                <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Business Description</legend>
-                <label class="top"><textarea name="businessDescription" placeholder="Please provide a brief description..."></textarea> </label>
-            </fieldset>
-            <input type="hidden" name="timeLoaded">
-            <input type="submit" value="Become a Member" class="submitBtn">
-
+        <form class="join-form" method="get" action="thankyou.html">
+            <div id="join-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Business Position Title: <input type="text" name="position" pattern="^(?:[a-zA-Z\- ]{7,})?$"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="email@email.com" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required></label>
+                    <label class="top">Business Name* <input type="text" name="business" required></label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Choose Membership Level</legend>
+                    <div><label class="sbs"><input type="radio" name="membership" value="np"> NP Membership</label></div>
+                    <div><label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label></div>
+                    <div><label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label></div>
+                    <div><label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label></div>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <label class="top"><textarea name="businessDescription" placeholder="Please provide a brief description..."></textarea> </label>
+                    <label class="form-date"><p><span id="form-date"></span> </p></label>
+                </fieldset>
+                <input type="hidden" name="timeLoaded">
+                <input type="submit" value="Become a Member" class="submitBtn">
+            </div>
+            <div>
+                <table class="membershipLevels">
+                    <thead>
+                        <tr>
+                            <th colspan="5" scope="colgroup">Membership Levels</th>
+                        </tr>
+                        <tr>
+                            <th scope="col"></th>
+                            <th class="vertical" scope="col">NP Membership </th>
+                            <th class="vertical" scope="col">Bronze Membership</th>
+                            <th class="vertical" scope="col">Silver Membership</th>
+                            <th class="vertical" scope="col">Gold Membership</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Access to resources and tools to support organization's mission</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Networking opportunities</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Visibility and recognition within the community</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Training sessions to enhance your business skills and knowledge</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Limited advertising opportunities to promote your organization</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                        </tr>
+                        <tr>
+                            <td>Featured advertising spots on our chamber's homepage</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                        </tr>
+                        <tr>
+                            <td>Premium advertising placement on our homepage, maximizing your visibility</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Signature</td>
+                            <td>No Fee</td>
+                            <td>9,90</td>
+                            <td>14,90</td>
+                            <td>19,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </form>
 
-        <table class="membershipLevels">
-            <thead>
-                <tr>
-                    <th colspan="5" scope="colgroup">Membership Levels</th>
-                </tr>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">NP Membership </th>
-                    <th scope="col">Bronze Membership</th>
-                    <th scope="col">Silver Membership</th>
-                    <th scope="col">Gold Membership</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Access to resources and tools to support organization's mission</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Networking opportunities</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Visibility and recognition within the community</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Training sessions to enhance your business skills and knowledge</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Limited advertising opportunities to promote your organization</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                </tr>
-                <tr>
-                    <td>Featured advertising spots on our chamber's homepage</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                    <td>❌</td>
-                </tr>
-                <tr>
-                    <td>Premium advertising placement on our homepage, maximizing your visibility</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <td>Monthly Signature</td>
-                    <td>No Fee</td>
-                    <td>9,90</td>
-                    <td>14,90</td>
-                    <td>19,90</td>
-                </tr>
-            </tbody>
-        </table>
     </main>
 
     <footer>
@@ -176,6 +180,7 @@
 
     <script src="scripts/script.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/form-date.js"></script>
 
 </body>
 
