@@ -94,11 +94,14 @@
   }
 
   main section.spotlight div {
-    margin: 5px;
-    height: 32%;
-    width: 95%;
+    display: block;
   }
-  main section.spotlight div:nth-child(3) {
+  
+  main section.spotlight section {
+    height: 33vh;
+  }
+
+  main section.spotlight section:nth-child(3) {
     display: block;
   }
 

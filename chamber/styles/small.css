@@ -42,7 +42,7 @@ p {
 main section, figure {
   background-color: var(--accent2-color);
   margin: 0.5em;
-  height: 200px;
+  height: 35vh;
   overflow: hidden;
 }
 
@@ -262,25 +262,14 @@ figcaption {
 }
 
 main section.spotlight {
-  background-color: var(--accent2-color);
-  border:solid 1px black;
   height: 415px;
 }
 
-main section.spotlight div {
-  background-color: var(--accent2-color);
-  border:solid 1px black;
-  margin: 3%;
-  height: 190px;
-  text-align: center;
-  font-size: .8rem;
+main section.spotlight section{
+  height: 28vh;
 }
 
-main section.spotlight p.icon {
-  font-size: 2.5rem;
-}
-
-main section.spotlight div:nth-child(3) {
+main section.spotlight section:nth-child(n+3) {
   display: none;
 }
 
