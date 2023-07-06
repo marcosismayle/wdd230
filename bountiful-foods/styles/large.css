@@ -1,0 +1,176 @@
+@media only screen and (min-width: 54rem) {
+
+  /*** General rules ***/
+
+  /*** Header ***/
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header h2 {
+    font-size: 1em;
+  }
+
+  /*** Navigation ***/
+
+  nav button {
+    display: none;
+  }
+  
+  nav ul#primaryNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    border: none;
+  }
+
+  /*** Main ***/
+
+  main {
+    margin: auto;
+  }
+
+  main #grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 2px;
+  }
+
+  /*** Hero ***/
+
+  main figure.hero-image {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    height: auto;
+  }
+
+  .hero-text {
+    top: 70%;
+}
+
+  /*** Event Section ***/
+
+  main section.event {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  section.event h2, section.event h3 {
+    font-size: .8em;
+  }
+
+  section.event p {
+    font-size: .7em;
+  }
+
+  /*** Weather Section ***/
+
+  main section.weather {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  main section.news {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    height: auto;
+  }
+
+  main section.spotlight {
+    grid-column: 4/5;
+    grid-row: 1/4;
+    display: block;
+    height: auto;
+    max-width: 20rem;
+  }
+
+  main section.join {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  main section.spotlight div {
+    display: block;
+  }
+  
+  main section.spotlight section {
+    height: 33vh;
+  }
+
+  main section.spotlight section:nth-child(3) {
+    display: block;
+  }
+
+  .join-form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  table.membershipLevels .vertical {
+    writing-mode: unset;
+  }
+
+  table.membershipLevels {
+    width: 90%;
+    max-width: 550px;
+    max-height: 500px;
+  }
+
+  .list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /*********Contact*************/
+
+  .contact h2 {
+    text-align: center;
+    margin: 1em;
+  }
+
+  form.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form.contact-form .label {  
+    margin: 2em;  
+    width: 25vw;
+  }
+
+  form.contact-form img {
+    display: unset;
+    margin: 2em;
+  }
+
+  form.contact-form fieldset{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+  }
+
+  section.contact-us .contact-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  section.map iframe{
+    width: 90%;
+    height: 50vh;
+  }
+
+  section.demography {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}
