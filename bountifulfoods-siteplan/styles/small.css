@@ -131,7 +131,7 @@ th, td {
 
 th {
   font-size: 12px;
-  background-color: var(--primary-color);
+  background-color: var(--paragraph-background-color);
 }
 
 th h3 {
