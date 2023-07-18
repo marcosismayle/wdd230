@@ -9,81 +9,72 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" type="image/png" href="images/chamber-of-commerce-logo.png">
+    <link rel="icon" type="image/png" href="images/bountiful-logo.png">
     <title>Bountiful Foods | Home </title>
 </head>
 
 <body>
-
-    <div id="banner">
-        <button id="closeBtn"><span>X</span></button>
-        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-    </div>
     <header>
-        <a href="index.html"><img class="logo" src="images/chamber-of-commerce-logo.webp" alt="Logo-image"></a>
-        <div>
-            
-            <h1>Campinas</h1>
-            <h2>Chamber of Commerce</h2>
-            <p><span id="todayString"></span></p>
-        </div>
-        <div>      
-            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-logo.png" alt="linkedin-logo-image"></a>
-            <a href="https://www.fb.com" target="_blank"><img src="images/facebook-logo.png" alt="facebook-logo-image"></a>
-        </div>
+        <nav>
+            <div class="menu">
+                <a href="index.html" class="menu__logo"><img src="images/bountiful-logo.png" alt="logo"></a>
+                <h1 class="menu__title">Bountiful Foods</h1>
+                <div class="menu__icons">
+                <i class="icon-menu"><span></span></i>
+                </div>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__list__item"><a href="index.html" class="text-item" id="active">Home</a></li>
+                <li class="menu__list__item"><a href="fresh.html" class="text-item">Fresh</a></li>
+                <li class="menu__list__item"><a href="aboutus.html" class="text-item">About</a></li>
+                <li class="menu__list__item"><a href="#" class="text-item">Resources</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>        
-        <ul id="primaryNav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>        
-    </nav>
     
     <main>
         <div id="grid-container">
-            <figure class="hero-image">
-                <img src="images/hero-img.jpg" alt="man giving a hand shake"
+            <figure class="hero">
+                <img src="images/hero.jpg" alt="man giving a hand shake"
                      sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, (max-width: 1100px) 1100px"
-                     srcset="images/hero-img-500x333.jpg 500w, 
-                             images/hero-img-800x533.jpg 800w,
-                             images/hero-img-1100x333.jpg 1100w">
-                <div class="hero-text">
-                    <h2 style="font-size: 50px;">Welcome</h2>
-                    <p>Join Campinas Chamber of Commerce today</p>
-                    <button class="joinBtn" onclick="redirectToPage()">Join us</button>
+                     srcset="images/hero500.jpg 500w, 
+                             images/hero800.jpg 800w,
+                             images/hero1100.jpg 1100w">
+                <div class="hero__text">
+                    <h2>Bountiful Foods</h2>
+                    <p>Fresh, organic and delicious: Nourishing you with nature's bounty!</p>
+                    <button class="orderBtn" onclick="redirectToPage()">Get Fresh</button>
                 </div>
             </figure>
-            
-            <section class="event">
-                <div>
-                    <h2>Ribbon Cutting</h2>
-                    <h3>ABC Kindergarden</h3>
-                    <p>Join us for this momentous occasion as we embark on a journey to provide exceptional early childhood education in a nurturing environment. Your presence would make the event truly special.</p>
-                    <p><a href="#">more info...</a></p>
-                </div>
-            </section>
             <section class="weather">
-                <div class="weather-div">
-                    <div class="temp">
-                        <h2><span id="region"></span></h2>
-                        <p><span id="current-temp"></span> °F</p>
-                        <p>Feels like:<span id="feels-like"></span> °F</p>
-                    </div>
-
-                    <div class="weather-icon">
-                        <img src="" alt="" id="weather-icon" />
+                <div class="weather__grid">
+                    <h2><span id="region"></span></h2>
+                    <div class="weather__grid__current">
                         <figcaption></figcaption>
+                        <div class="weather__grid__item__temp">
+                            <img src="" alt="" id="weather-icon" />
+                            <p><span id="current-temp"></span> °F</p>
+                        </div>                        
+                        <p>Humidity: <span id="humidity"></span> %</p>
                     </div>
-                    
-                    <div class="wind">
-                        <hr>
-                        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
-                        <p>Wind Chill: <span id="wind-chill"></span></p>
+                    <div class="weather__grid__forecast">
+                        <img src="" alt="" id="weather-icon1" />
+                        <p><span id="forecast-temp1"></span> °F</p>
                     </div>
+                    <div class="weather__grid__forecast">
+                        <img src="" alt="" id="weather-icon2" />
+                        <p><span id="forecast-temp2"></span> °F</p>
+                    </div>
+                    <div class="weather__grid__forecast">
+                        <img src="" alt="" id="weather-icon3" />
+                        <p><span id="forecast-temp3"></span> °F</p>
+                    </div>
+                </div>
+            </section>            
+            <section class="ordered">
+                <div>
+                    <h2>Ordered</h2>
+                    <div></div>
                 </div>
             </section>
             <section class="news">
@@ -128,6 +119,7 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/members.js"></script>
+    <script src="scripts/menu.js"></script>
 
 </body>
 
