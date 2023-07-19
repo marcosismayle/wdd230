@@ -86,5 +86,5 @@ document.addEventListener("DOMContentLoaded", function() {
 // Join button
 
 function redirectToPage() {
-    window.location.href = "https://marcosismayle.github.io/wdd230/chamber/join.html";
+    window.location.href = "https://marcosismayle.github.io/wdd230/bountiful-foods/fresh.html";
 }
