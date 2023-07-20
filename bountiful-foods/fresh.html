@@ -1,113 +1,130 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fresh page for Bountiful Foods">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" type="image/png" href="images/bountiful-logo.png">
-    <title>Bountiful Foods | Fresh </title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fresh page for Bountiful Foods" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/medium.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+  <link rel="icon" type="image/png" href="images/bountiful-logo.png" />
+  <title>Bountiful Foods | Fresh</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="menu">
-                <a href="index.html" class="menu__logo"><img src="images/bountiful-logo.png" alt="logo"></a>
-                <h1 class="menu__title">Bountiful Foods</h1>
-                <div class="menu__icons">
-                <i class="icon-menu"><span></span></i>
-                </div>
-            </div>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="index.html" class="text-item">Home</a></li>
-                <li class="menu__list__item"><a href="fresh.html" class="text-item" id="active">Fresh</a></li>
-                <li class="menu__list__item"><a href="aboutus.html" class="text-item">About</a></li>
-                <li class="menu__list__item"><a href="#" class="text-item">Resources</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="order">
-        <div id="join-form">
-            <fieldset>
-              <legend>Personal Information</legend>
-              <label class="top">First Name* <input type="text" id="firstName" name="firstName" required></label>
-              <label class="top">Email* <input type="email" id="email" name="email" placeholder="email@example.com" required></label>
-              <label class="top">Phone* <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" required></label>
-            </fieldset>
-          
-            <fieldset>
-              <legend>Make your drink</legend>
-              <div>
-                <label class="sbs"> First option:
-                  <select id="fruitSelect1">
-                    <option value="" disabled selected hidden>&nbsp;</option>
-                  </select>
-                </label>
-                <label class="sbs"> Second option:
-                  <select id="fruitSelect2">
-                    <option value="" disabled selected hidden>&nbsp;</option>
-                  </select>
-                </label>
-                <label class="sbs"> Third option:
-                  <select id="fruitSelect3">
-                    <option value="" disabled selected hidden>&nbsp;</option>
-                  </select>
-                </label>
-              </div>
-            </fieldset>
-          
-            <fieldset>
-              <legend>Observations</legend>
-              <label class="top"><textarea name="Observations" id="specialInstructions"></textarea> </label>
-              <label class="form-date"><span id="form-date"></span></label>
-            </fieldset>
-            <input type="hidden" name="timeLoaded">
-            <input type="submit" value="Order drink" id="submitBtn">
-            <div id="orderOutput"></div>
-          </div>
-          
-        <div class="table-container"></div>
-    </main>
-
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <a href="index.html"><img class="logo" src="images/bountiful-logo-2.png" alt="Logo-image"></a>
-                <div>                    
-                    <a href=""><img class="social" src="images/facebook.png" alt="Logo-facebook"></a>
-                    <a href="index.html"><img class="social" src="images/instagram.png" alt="Logo-instagram"></a>
-                    <a href="index.html"><img class="social" src="images/linkedin.png" alt="Logo-image"></a>
-                </div>
-                
-            </div>
-            
-            <section>
-                <h3>Bountiful Foods</h3>
-                <address>Av. Anchieta, 200 - Centro Campinas - SP, 13015-100</address>
-            </section>
-            <section>
-                <h3>Contact us:</h3>
-                <a href="mailto:info@bountifulfoods.com" target="_blank">info@bountifulfoods.com</a>
-                <p>991-191</p>
-            </section>
+  <header>
+    <nav>
+      <div class="menu">
+        <a href="index.html" class="menu__logo"><img src="images/bountiful-logo.png" alt="logo" /></a>
+        <h1 class="menu__title">Bountiful Foods</h1>
+        <div class="menu__icons">
+          <i class="menu__icon"><span></span></i>
         </div>
-        <hr>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__list__item">
+          <a href="index.html" class="text-item">Home</a>
+        </li>
+        <li class="menu__list__item">
+          <a href="fresh.html" class="text-item" id="active">Fresh</a>
+        </li>
+        <li class="menu__list__item">
+          <a href="aboutus.html" class="text-item">About</a>
+        </li>
+      </ul>
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/facebook.png"
+            alt="Logo-facebook" /></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="social" src="images/instagram.png"
+            alt="Logo-instagram" /></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img class="social" src="images/linkedin.png"
+            alt="Logo-image" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="order">
+    <h1>Here you can make your specialty drink.</h1>
+    <div id="order-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>First Name*<input type="text" id="firstName" name="firstName" required /></label>
+        <label>Email*<input type="email" id="email" name="email" placeholder="email@example.com" required /></label>
+        <label>Phone*<input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" required /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Make your drink</legend>
         <div>
-            <p>&copy; <span id="currentYear"></span> | Bountiful Foods | Marcos Ismayle - WDD230 Final Project</p>
-            <p><span id="lastUpdated"></span> </p>
+          <label>First option:
+            <select id="fruitSelect1">
+              <option value="" disabled selected hidden>&nbsp;</option>
+            </select>
+          </label>
+          <label>Second option:
+            <select id="fruitSelect2">
+              <option value="" disabled selected hidden>&nbsp;</option>
+            </select>
+          </label>
+          <label>Third option:
+            <select id="fruitSelect3">
+              <option value="" disabled selected hidden>&nbsp;</option>
+            </select>
+          </label>
         </div>
-    </footer>
+      </fieldset>
 
-    <script src="scripts/script.js"></script>
-    <script src="scripts/fruits.js"></script>
-    <script src="scripts/menu.js"></script>
+      <fieldset>
+        <legend>Observations</legend>
+        <label>
+          <textarea name="Observations" id="specialInstructions"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Order drink" id="submitBtn" />
+      <div id="orderOutput"></div>
+    </div>
+  </main>
 
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html"><img class="logo" src="images/bountiful-logo-2.png" alt="Logo-image" /></a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/facebook.png"
+            alt="Logo-facebook" /></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="social" src="images/instagram.png"
+            alt="Logo-instagram" /></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img class="social" src="images/linkedin.png"
+            alt="Logo-linkedin" /></a>
+      </div>
+
+      <section>
+        <h3>Bountiful Foods</h3>
+        <address>
+          1234 Ocean View Street, Carlsbad, CA 92008, United States.
+        </address>
+        <h3>Contact us:</h3>
+        <a href="mailto:info@bountifulfoods.com" target="_blank">info@bountifulfoods.com</a>
+        <p>+1 (555) 555-1234</p>
+      </section>
+    </div>
+    <hr />
+    <div>
+      <p>
+        &copy; <span id="currentYear"></span> | Bountiful Foods | Marcos
+        Ismayle - WDD230 Final Project
+      </p>
+      <p><span id="lastUpdated"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+  <script src="scripts/fruits.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>

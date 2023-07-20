@@ -4,127 +4,42 @@
 
   /*** Header ***/
 
-  header p {
-    padding: 1vw;
-    font-size: 12px;
-  }
-
   /*** Navigation ***/
 
   /*** Main ***/
 
-  main #grid-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-
   /*** Hero ***/
 
-  main figure.hero-image {
-    grid-column: 1/3;
-  }
+  /*** Drink Section ***/
 
-  /*** Event Section ***/
-
-
-  main section.event {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-
-  /*** Weather Section ***/
-
-  main section.weather {
-    grid-column: 2/3;
-    grid-row: 5/6;
-  }
-
-  .weather-div h2{
-    font-size: 1em;
-  }
-  
-  .weather-div #current-temp {
-    font-size: 3em;
-  }
-  
-  .weather-div .weather-icon {
-    margin-left: 15px;
-    font-size: .8em;
-  }
-  
-  .weather-div .temp p {
-    font-size: .6em
-  }
-  
-  .weather-div .wind p {
-    font-size: .8em
-  }
-
-  figcaption {
-    font-size: .8em;
-  }
-
-  main section.news {
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-
-  main section.spotlight {
-    grid-column: 1/3;
-    grid-row: 3/4;
-    align-items: center;
-    display: inline-flex;
-    height: 210px;
-  }
-
-  main section.join {
-    display: unset;
-    grid-column: 1/3;
-    grid-row: 4/5;
-  }
-  
-  main section.spotlight div {
+  .drinks {
     display: flex;
-    height: 190px;
+    flex-direction: row;
+    font-size: 2vw;
   }
   
-  main section.spotlight section {
-    height: 26vh;
+  .drinks+.drinks {
+    flex-direction: row-reverse;
+  }
+
+  .drinks img {
+    width: 50vw;
+    margin-bottom: 7px;
+    margin-left: 7px;
   }
   
-  .join h2{
-    margin-top: 3.4rem;
-    color: var(--primary-color);
-    font-size: 20px;
-  }
-  
-  table.membershipLevels {
-    font-size: 1em;
+  .drinks+.drinks img{
+    margin-right: 7px;
   }
 
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+  #order-form fieldset {
+    margin: 20px 80px;
   }
 
-  .footer-grid section {
-    padding: 1vw;
-  }
-
-
-  table.demography-table th, td {
-    display: table-cell;
-    border: 1px solid black;
-    padding: 8px;
-  }
-
-  .demography img {
-    max-width: 500px;
-  }
-
-  .photo-card:hover {
-    transform: scale(1.05);
+  .map-contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
   }
 
 }

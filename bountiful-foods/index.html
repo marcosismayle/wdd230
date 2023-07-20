@@ -1,166 +1,285 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Homepage for Bountiful Foods">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" type="image/png" href="images/bountiful-logo.png">
-    <title>Bountiful Foods | Home </title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage for Bountiful Foods" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="icon" type="image/png" href="images/bountiful-logo.png" />
+    <title>Bountiful Foods | Home</title>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="menu">
-                <a href="index.html" class="menu__logo"><img src="images/bountiful-logo.png" alt="logo"></a>
-                <h1 class="menu__title">Bountiful Foods</h1>
-                <div class="menu__icons">
-                <i class="menu__icon"><span></span></i>
-                </div>
-            </div>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="index.html" class="text-item" id="active">Home</a></li>
-                <li class="menu__list__item"><a href="fresh.html" class="text-item">Fresh</a></li>
-                <li class="menu__list__item"><a href="aboutus.html" class="text-item">About</a></li>
-                <li class="menu__list__item"><a href="#" class="text-item">Resources</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="menu">
+          <a href="index.html" class="menu__logo"
+            ><img src="images/bountiful-logo.png" alt="logo"
+          /></a>
+          <h1 class="menu__title">Bountiful Foods</h1>
+          <div class="menu__icons">
+            <i class="menu__icon"><span></span></i>
+          </div>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__list__item">
+            <a href="index.html" class="text-item" id="active">Home</a>
+          </li>
+          <li class="menu__list__item">
+            <a href="fresh.html" class="text-item">Fresh</a>
+          </li>
+          <li class="menu__list__item">
+            <a href="aboutus.html" class="text-item">About</a>
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img class="social" src="images/facebook.png" alt="Logo-facebook"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              class="social"
+              src="images/instagram.png"
+              alt="Logo-instagram"
+          /></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><img class="social" src="images/linkedin.png" alt="Logo-image"
+          /></a>
+        </div>
+      </nav>
     </header>
-    
+
     <main>
-        <div id="grid-container">
-            <figure class="hero">
-                <img src="images/hero.jpg" alt="man giving a hand shake"
-                     sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, (max-width: 1100px) 1100px"
-                     srcset="images/hero500.jpg 500w, 
-                             images/hero800.jpg 800w,
-                             images/hero1100.jpg 1100w">
-                <div class="hero__text">
-                    <h2>Bountiful Foods</h2>
-                    <p>Fresh, organic and delicious: Nourishing you with nature's bounty!</p>
-                    <button id="orderBtn" onclick="redirectToPage()">Get Fresh</button>
-                </div>
-            </figure>
-            <section class="weather">
-                <div class="weather__grid">
-                    <h2><span id="region"></span></h2>
-                    <div class="weather__grid__current">
-                        <figcaption></figcaption>
-                        <div class="weather__grid__item__temp">
-                            <img src="" alt="" id="weather-icon" />
-                            <p><span id="current-temp"></span> °F</p>
-                        </div>                        
-                        <p>Humidity: <span id="humidity"></span> %</p>
-                    </div>
-                    <div class="weather__grid__forecast">
-                        <img src="" alt="" id="weather-icon1" />
-                        <p><span id="forecast-temp1"></span> °F</p>
-                    </div>
-                    <div class="weather__grid__forecast">
-                        <img src="" alt="" id="weather-icon2" />
-                        <p><span id="forecast-temp2"></span> °F</p>
-                    </div>
-                    <div class="weather__grid__forecast">
-                        <img src="" alt="" id="weather-icon3" />
-                        <p><span id="forecast-temp3"></span> °F</p>
-                    </div>
-                </div>
-            </section>
-            <section class="drinks">
-                <img src="images/mango-juice.jpg" alt="Mango juice">
-                <h2>Mango Juice</h2>
-                <p>
-                    Mango juice is a refreshing and delicious beverage that captures the vibrant essence of ripe mangoes. Known for its tropical and sweet flavor, mango juice is packed with nutrients and vitamins, making it a healthy choice. With its vibrant orange color and smooth consistency, mango juice provides a burst of tropical goodness in every sip. Whether enjoyed on its own, blended into smoothies, or used as a base for cocktails, mango juice is a delightful treat that embodies the exotic and luscious qualities of this tropical fruit.</p>
-            </section>
-            <section class="drinks">
-                <img src="images/watermelon-juice.jpg" alt="Mango juice">
-                <h2>Watermelon Juice</h2>
-                <p>
-                    Watermelon juice is a thirst-quenching and hydrating beverage that embodies the refreshing qualities of ripe watermelons. With its naturally sweet and juicy flavor, watermelon juice is a popular choice during hot summer days. It boasts a vibrant pink or red color and a smooth texture that delights the taste buds. Packed with vitamins, minerals, and antioxidants, watermelon juice is not only delicious but also a healthy option. Whether enjoyed on its own, mixed with other fruits for a refreshing punch, or used as a base for mocktails, watermelon juice is a delightful and revitalizing drink that captures the essence of summertime.</p>
-            </section>            
-            <section class="ordered">
-                <div>
-                    <h2>Ordered</h2>
-                    <div></div>
-                </div>
-            </section>
-        </div>
-        <div>
-            <h2>Meet this places</h2>
-            <section>
-                <img src="images/longbeach.jpg" alt="Longbeach">
-                <h3>Long Beach</h3>
-                <p>Long Beach is a vibrant coastal city in Southern California, known for its beautiful beaches and lively atmosphere. With its long stretch of sandy coastline, it offers a wide range of recreational activities such as swimming, sunbathing, and surfing. The city is also home to the iconic Queen Mary, a retired ocean liner turned hotel and museum, attracting visitors from around the world. With its diverse neighborhoods, thriving arts scene, and delicious culinary offerings, Long Beach offers a unique blend of beachfront charm and urban excitement.</p>
-                <p>
-                    Long Beach is a hub of cultural and entertainment attractions. The city hosts the annual Long Beach Grand Prix, a renowned IndyCar race that draws racing enthusiasts from near and far. The Museum of Latin American Art (MOLAA) showcases an impressive collection of contemporary and modern Latin American art, while the Long Beach Museum of Art offers a diverse range of visual arts exhibitions. Visitors can also explore the bustling Pike Outlets, a shopping and dining destination with a lively waterfront setting.
-                </p>
-                <p>
-                    Long Beach is a vibrant community that celebrates its diverse population and fosters a sense of inclusivity. The city hosts numerous events and festivals throughout the year, showcasing its rich cultural heritage and highlighting the talents of local artists and performers. The waterfront promenade, known as The Pike, is a popular gathering place for locals and visitors alike, offering a lively atmosphere with restaurants, bars, and entertainment venues. With its sunny climate, vibrant culture, and picturesque coastal setting, Long Beach offers a dynamic and welcoming experience for residents and visitors alike.
-                </p>
-            </section>
-            <section>
-                <img src="images/malibu.jpg" alt="Malibu">
-                <h3>Malibu</h3>
-                <p>Malibu, a renowned coastal city in Southern California, is synonymous with pristine beaches and luxurious beachfront homes. With its breathtaking ocean views and a laid-back beach town vibe, Malibu attracts visitors seeking relaxation and natural beauty. The iconic Malibu Pier is a popular spot for fishing and strolling, while Surfrider Beach is known for its fantastic waves, making it a haven for surfers. The city is also home to several picturesque state parks, offering hiking trails and scenic overlooks that showcase the stunning coastline. With its stunning sunsets and celebrity allure, Malibu offers a slice of paradise on the California coast.</p>
-                <p>
-                    Malibu is not only a coastal haven but also a destination for wine enthusiasts. The Malibu Wine Trail winds through the scenic Santa Monica Mountains, showcasing a variety of vineyards and tasting rooms. Visitors can sample locally produced wines while enjoying the picturesque vineyard landscapes. The Malibu Country Mart, a charming outdoor shopping center, offers a delightful mix of boutique shops, art galleries, and gourmet restaurants, making it a perfect place to unwind after a day at the beach. Whether you're soaking up the sun or indulging in wine tasting, Malibu offers a sophisticated beachside escape.
-                </p>
-                <p>
-                    As a coastal community, Malibu embraces an active outdoor lifestyle. The area is known for its excellent hiking trails, such as the iconic Point Dume Trail and Solstice Canyon Trail, which provide stunning views of the Pacific Ocean and opportunities to explore the region's diverse ecosystems. Outdoor enthusiasts can also enjoy water activities like kayaking, paddleboarding, and sailing along the coastline. With its stunning natural landscapes, upscale amenities, and proximity to Los Angeles, Malibu offers a unique blend of relaxation and adventure for residents and visitors alike.
-                </p>
-            </section>
-            <section>
-                <img src="images/santa-monica.jpg" alt="Santa Monica">
-                <h3>Santa Monica</h3>
-                <p>Santa Monica, a vibrant beachfront city in Southern California, is a destination that seamlessly blends coastal charm with urban sophistication. Its famous Santa Monica Pier, with its iconic Ferris wheel and lively boardwalk, draws crowds of visitors year-round. The expansive sandy beach is perfect for sunbathing and beach volleyball, while the nearby Palisades Park offers stunning ocean views and a scenic pathway for strolling or biking. The Third Street Promenade, a bustling pedestrian street, features an array of shops, restaurants, and street performers, creating a vibrant atmosphere day and night.</p>
-                <p>
-                    Santa Monica is renowned for its commitment to sustainability and healthy living. The city boasts an extensive network of bike lanes and bike-sharing programs, making it easy to explore on two wheels. The bustling Santa Monica Farmers Market offers fresh, locally sourced produce and artisanal goods, showcasing the region's culinary delights. The Annenberg Community Beach House provides a beachfront oasis with a pool, splash pad, and stunning ocean views, offering a family-friendly retreat. With its focus on wellness, outdoor activities, and a lively cultural scene, Santa Monica embodies the quintessential California beach experience.
-                </p>
-                <p>
-                    Santa Monica embraces its role as a cultural hub, hosting a variety of festivals, art exhibitions, and live performances throughout the year. The Bergamot Station arts complex houses numerous contemporary art galleries, while the Santa Monica Museum of Art showcases thought-provoking exhibits. The city's vibrant culinary scene features an array of world-class restaurants, trendy cafes, and gourmet food trucks, catering to every palate. Whether you're seeking outdoor adventure, cultural experiences, or simply relaxing on the beach, Santa Monica offers a dynamic and vibrant coastal getaway.
-                </p>
-            </section>
-        </div>
+      <div id="grid-container">
+        <figure class="hero">
+          <img
+            src="images/hero.jpg"
+            alt="man giving a hand shake"
+            sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, (max-width: 1100px) 1100px"
+            srcset="
+              images/hero500.jpg   500w,
+              images/hero800.jpg   800w,
+              images/hero1100.jpg 1100w
+            "
+          />
+          <div class="hero__text">
+            <h2>Bountiful Foods</h2>
+            <p>
+              Fresh, organic and delicious: Nourishing you with nature's bounty!
+            </p>
+            <button id="orderBtn" onclick="redirectToPage()">Get Fresh</button>
+          </div>
+        </figure>
+        <section class="weather">
+          <div class="weather__grid">
+            <h2><span id="region"></span></h2>
+            <div class="weather__grid__current">
+              <figcaption></figcaption>
+              <div class="weather__grid__item__temp">
+                <img src="" alt="" id="weather-icon" />
+                <p><span id="current-temp"></span> °F</p>
+              </div>
+              <p>Humidity: <span id="humidity"></span> %</p>
+            </div>
+            <div class="weather__grid__forecast1">
+              <img src="" alt="" id="weather-icon1" />
+              <p><span id="forecast-temp1"></span> °F</p>
+            </div>
+            <div class="weather__grid__forecast2">
+              <img src="" alt="" id="weather-icon2" />
+              <p><span id="forecast-temp2"></span> °F</p>
+            </div>
+            <div class="weather__grid__forecast3">
+              <img src="" alt="" id="weather-icon3" />
+              <p><span id="forecast-temp3"></span> °F</p>
+            </div>
+          </div>
+        </section>
+        <section class="drinks">
+          <img src="images/mango-juice.jpg" alt="Mango juice" />
+          <div>
+            <h2>Mango Juice</h2>
+            <p>
+              Mango juice is a refreshing and delicious beverage that captures
+              the vibrant essence of ripe mangoes. Known for its tropical and
+              sweet flavor, mango juice is packed with nutrients and vitamins,
+              making it a healthy choice. With its vibrant orange color and
+              smooth consistency, mango juice provides a burst of tropical
+              goodness in every sip. Whether enjoyed on its own, blended into
+              smoothies, or used as a base for cocktails, mango juice is a
+              delightful treat that embodies the exotic and luscious qualities
+              of this tropical fruit.
+            </p>
+          </div>
+        </section>
+        <section class="drinks">
+          <img src="images/watermelon-juice.jpg" alt="Mango juice" />
+          <div>
+            <h2>Watermelon Juice</h2>
+            <p>
+              Watermelon juice is a thirst-quenching and hydrating beverage that
+              embodies the refreshing qualities of ripe watermelons. With its
+              naturally sweet and juicy flavor, watermelon juice is a popular
+              choice during hot summer days. It boasts a vibrant pink or red
+              color and a smooth texture that delights the taste buds. Packed
+              with vitamins, minerals, and antioxidants, watermelon juice is not
+              only delicious but also a healthy option. Whether enjoyed on its
+              own, mixed with other fruits for a refreshing punch, or used as a
+              base for mocktails, watermelon juice is a delightful and
+              revitalizing drink that captures the essence of summertime.
+            </p>
+          </div>
+        </section>
+        <p class="submissionCount">
+          Form submited: <span id="submissionCount">0</span> times.
+        </p>
+        <section class="ordered">
+          <div>
+            <h2>Ordered</h2>
+            <div></div>
+          </div>
+        </section>
+      </div>
+      <div class="locations">
+        <h2>Embrace the Beauty of Our Region</h2>
+        <section>
+          <img
+            src="images/longbeach-assets/longbeach.jpg"
+            alt="longbeach"
+            sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, (max-width: 1100px) 1100px"
+            srcset="
+              images/longbeach-assets/longbeach500.jpg   500w,
+              images/longbeach-assets/longbeach800.jpg   800w,
+              images/longbeach-assets/longbeach1100.jpg 1100w
+            "
+          />
+          <div class="locations__text">
+            <h3>Long Beach</h3>
+            <p>
+              Long Beach is a vibrant coastal city in Southern California, known
+              for its beautiful beaches and lively atmosphere. With its long
+              stretch of sandy coastline, it offers a wide range of recreational
+              activities such as swimming, sunbathing, and surfing. The city is
+              also home to the iconic Queen Mary, a retired ocean liner turned
+              hotel and museum, attracting visitors from around the world. With
+              its diverse neighborhoods, thriving arts scene, and delicious
+              culinary offerings, Long Beach offers a unique blend of beachfront
+              charm and urban excitement.
+            </p>
+          </div>
+        </section>
+        <section>
+          <img
+            src="images/malibu-assets/malibu.jpg"
+            alt="malibu"
+            sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, (max-width: 1100px) 1100px"
+            srcset="
+              images/malibu-assets/malibu500.jpg   500w,
+              images/malibu-assets/malibu800.jpg   800w,
+              images/malibu-assets/malibu1100.jpg 1100w
+            "
+          />
+          <div class="locations__text">
+            <h3>Malibu</h3>
+            <p>
+              Malibu, a renowned coastal city in Southern California, is
+              synonymous with pristine beaches and luxurious beachfront homes.
+              With its breathtaking ocean views and a laid-back beach town vibe,
+              Malibu attracts visitors seeking relaxation and natural beauty.
+              The iconic Malibu Pier is a popular spot for fishing and
+              strolling, while Surfrider Beach is known for its fantastic waves,
+              making it a haven for surfers. The city is also home to several
+              picturesque state parks, offering hiking trails and scenic
+              overlooks that showcase the stunning coastline. With its stunning
+              sunsets and celebrity allure, Malibu offers a slice of paradise on
+              the California coast.
+            </p>
+          </div>
+        </section>
+        <section>
+          <img
+            src="images/santa-monica-assets/santa-monica.jpg"
+            alt="malibu"
+            sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, (max-width: 1100px) 1100px"
+            srcset="
+              images/santa-monica-assets/santa-monica500.jpg   500w,
+              images/santa-monica-assets/santa-monica800.jpg   800w,
+              images/santa-monica-assets/santa-monica1100.jpg 1100w
+            "
+          />
+          <div class="locations__text">
+            <h3>Santa Monica</h3>
+            <p>
+              Santa Monica, a vibrant beachfront city in Southern California, is
+              a destination that seamlessly blends coastal charm with urban
+              sophistication. Its famous Santa Monica Pier, with its iconic
+              Ferris wheel and lively boardwalk, draws crowds of visitors
+              year-round. The expansive sandy beach is perfect for sunbathing
+              and beach volleyball, while the nearby Palisades Park offers
+              stunning ocean views and a scenic pathway for strolling or biking.
+              The Third Street Promenade, a bustling pedestrian street, features
+              an array of shops, restaurants, and street performers, creating a
+              vibrant atmosphere day and night.
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
-        <div class="footer-grid">
-            <div>
-                <a href="index.html"><img class="logo" src="images/bountiful-logo-2.png" alt="Logo-image"></a>
-                <div>                    
-                    <a href=""><img class="social" src="images/facebook.png" alt="Logo-facebook"></a>
-                    <a href="index.html"><img class="social" src="images/instagram.png" alt="Logo-instagram"></a>
-                    <a href="index.html"><img class="social" src="images/linkedin.png" alt="Logo-image"></a>
-                </div>
-                
-            </div>
-            
-            <section>
-                <h3>Bountiful Foods</h3>
-                <address>Av. Anchieta, 200 - Centro Campinas - SP, 13015-100</address>
-            </section>
-            <section>
-                <h3>Contact us:</h3>
-                <a href="mailto:info@bountifulfoods.com" target="_blank">info@bountifulfoods.com</a>
-                <p>991-191</p>
-            </section>
-        </div>
-        <hr>
+      <div class="footer-grid">
         <div>
-            <p>&copy; <span id="currentYear"></span> | Bountiful Foods | Marcos Ismayle - WDD230 Final Project</p>
-            <p><span id="lastUpdated"></span> </p>
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="images/bountiful-logo-2.png"
+              alt="Logo-image"
+          /></a>
         </div>
+        <div>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img class="social" src="images/facebook.png" alt="Logo-facebook"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              class="social"
+              src="images/instagram.png"
+              alt="Logo-instagram"
+          /></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><img class="social" src="images/linkedin.png" alt="Logo-linkedin"
+          /></a>
+        </div>
+
+        <section>
+          <h3>Bountiful Foods</h3>
+          <address>
+            1234 Ocean View Street, Carlsbad, CA 92008, United States.
+          </address>
+          <h3>Contact us:</h3>
+          <a href="mailto:info@bountifulfoods.com" target="_blank"
+            >info@bountifulfoods.com</a
+          >
+          <p>+1 (555) 555-1234</p>
+        </section>
+      </div>
+      <hr />
+      <div>
+        <p>
+          &copy; <span id="currentYear"></span> | Bountiful Foods | Marcos
+          Ismayle - WDD230 Final Project
+        </p>
+        <p><span id="lastUpdated"></span></p>
+      </div>
     </footer>
 
     <script src="scripts/script.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/menu.js"></script>
-
-</body>
-
+    <script src="scripts/images-handler.js"></script>
+  </body>
 </html>

@@ -28,63 +28,24 @@ let todayString = dayOfWeek + ", " + day + " " + monthString + " " + year;
 
 document.getElementById("todayString").innerHTML = todayString;
 
-// Hamburguer menu 
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
-}
+let submissionCount = parseInt(localStorage.getItem("submissionCount")) || 0;
 
-const x = document.getElementById("hamburgerBtn");
-x.onclick = toggleMenu;
+const submissionCountElement = document.getElementById("submissionCount");
+submissionCountElement.textContent = submissionCount;
 
-//banner block
+const form = document.getElementById("submitBtn");
+form.addEventListener("click", function (event) {
+  event.preventDefault();
 
-let banner = document.getElementById('banner');
+  submissionCount++;
+  submissionCountElement.textContent = submissionCount;
 
-if (dayOfWeek === "Monday" || dayOfWeek === "Tuesday") {
-    banner.style.display = "block";
-} else {
-    banner.style.display = "none";
-}
+  localStorage.setItem("submissionCount", submissionCount);
 
-function closeBtn() {
-    document.getElementById("banner").style.display = "none";
-  }
+});
 
-document.getElementById("closeBtn").addEventListener("click", closeBtn);
-
-
-// Web Storage API - Brother BLazzard Codepen
-
-// 1️⃣ Initialize display element variable
-const visitsDisplay = document.querySelector(".visits");
-
-// 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
-// 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
-if (numVisits !== 0) {
-	visitsDisplay.innerHTML = numVisits;
-} else {
-	visitsDisplay.innerHTML = `This is your first visit. 🥳 Welcome!`;
-}
-
-// 4️⃣ increment the number of visits by one.
-numVisits++;
-
-// 5️⃣ store the new visit total into localStorage, key=numVisits-ls
-localStorage.setItem("numVisits-ls", numVisits);
-
-
-// Process current date and time that the form was loaded by the user
-
-document.addEventListener("DOMContentLoaded", function() {
-    var timeLoaded = document.getElementById("timeLoaded");
-    timeLoaded.value = today.toISOString();
-  });
-
-// Join button
+// Order button
 
 function redirectToPage() {
-    window.location.href = "https://marcosismayle.github.io/wdd230/bountiful-foods/fresh.html";
+    window.location.href = "/bountiful-foods/fresh.html";
 }
