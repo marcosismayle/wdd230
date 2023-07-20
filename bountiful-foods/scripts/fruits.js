@@ -11,109 +11,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const createTable = (fruits) => {
-    const table = document.createElement('table');
-
-    const headerRow = document.createElement('tr');
-
-    const headers = ['Name', 'ID', 'Genus', 'Family', 'Order', 'Carbohydrates', 'Protein', 'Fat', 'Calories', 'Sugar'];
-
-    headers.forEach(headerText => {
-      const headerCell = document.createElement('th');
-      headerCell.textContent = headerText;
-      headerRow.appendChild(headerCell);
-    });
-
-    table.appendChild(headerRow);
-
-    fruits.forEach(fruit => {
-      const dataRow = document.createElement('tr');
-
-      const nameCell = document.createElement('td');
-      nameCell.textContent = fruit.name;
-      dataRow.appendChild(nameCell);
-
-      const idCell = document.createElement('td');
-      idCell.textContent = fruit.id;
-      dataRow.appendChild(idCell);
-
-      const genusCell = document.createElement('td');
-      genusCell.textContent = fruit.genus;
-      dataRow.appendChild(genusCell);
-
-      const familyCell = document.createElement('td');
-      familyCell.textContent = fruit.family;
-      dataRow.appendChild(familyCell);
-
-      const orderCell = document.createElement('td');
-      orderCell.textContent = fruit.order;
-      dataRow.appendChild(orderCell);
-
-      const carboCell = document.createElement('td');
-      carboCell.textContent = fruit.nutritions.carbohydrates;
-      dataRow.appendChild(carboCell);
-
-      const proteinCell = document.createElement('td');
-      proteinCell.textContent = fruit.nutritions.protein;
-      dataRow.appendChild(proteinCell);
-
-      const fatCell = document.createElement('td');
-      fatCell.textContent = fruit.nutritions.fat;
-      dataRow.appendChild(fatCell);
-
-      const caloriesCell = document.createElement('td');
-      caloriesCell.textContent = fruit.nutritions.calories;
-      dataRow.appendChild(caloriesCell);
-
-      const sugarCell = document.createElement('td');
-      sugarCell.textContent = fruit.nutritions.sugar;
-      dataRow.appendChild(sugarCell);
-
-      table.appendChild(dataRow);
-    });
-
-    const tableContainer = document.querySelector('.table-container');
-    tableContainer.appendChild(table);
-  }
-  
   const fillFruitOptions = (fruits, selectId) => {
-  const fruitSelect = document.getElementById(selectId);
+    const fruitSelect = document.getElementById(selectId);
 
-  fruits.forEach((fruit) => {
-    const option = document.createElement('option');
-    option.value = fruit.id; // Usar fruit.id como valor da opção
-    option.textContent = `ID: ${fruit.id} - ${fruit.name}`;
-    fruitSelect.appendChild(option);
-  });
-}
+    fruits.forEach((fruit) => {
+      const option = document.createElement('option');
+      option.value = fruit.id;
+      option.textContent = `ID: ${fruit.id} - ${fruit.name}`;
+      fruitSelect.appendChild(option);
+    });
+  }
 
-const calculateTotalNutrition = (selectedFruits, fruitsData) => {
-  let totalCarbohydrates = 0;
-  let totalProtein = 0;
-  let totalFat = 0;
-  let totalSugar = 0;
-  let totalCalories = 0;
+  const calculateTotalNutrition = (selectedFruits, fruitsData) => {
+    let totalCarbohydrates = 0;
+    let totalProtein = 0;
+    let totalFat = 0;
+    let totalSugar = 0;
+    let totalCalories = 0;
 
-  selectedFruits.forEach((fruitName) => {
-    const fruitData = fruitsData.find((fruit) => fruit.name.toLowerCase() === fruitName.toLowerCase());
+    selectedFruits.forEach((fruitName) => {
+      const fruitData = fruitsData.find((fruit) => fruit.name.toLowerCase() === fruitName.toLowerCase());
 
-    if (fruitData) {
-      totalCarbohydrates += fruitData.nutritions.carbohydrates;
-      totalProtein += fruitData.nutritions.protein;
-      totalFat += fruitData.nutritions.fat;
-      totalSugar += fruitData.nutritions.sugar;
-      totalCalories += fruitData.nutritions.calories;
-    }
-  });
+      if (fruitData) {
+        totalCarbohydrates += fruitData.nutritions.carbohydrates;
+        totalProtein += fruitData.nutritions.protein;
+        totalFat += fruitData.nutritions.fat;
+        totalSugar += fruitData.nutritions.sugar;
+        totalCalories += fruitData.nutritions.calories;
+      }
+    });
 
-  return {
-    totalCarbohydrates,
-    totalProtein,
-    totalFat,
-    totalSugar,
-    totalCalories,
+    return {
+      totalCarbohydrates,
+      totalProtein,
+      totalFat,
+      totalSugar,
+      totalCalories,
+    };
   };
-};
 
   const displayOrderSummary = (event) => {
     event.preventDefault();
@@ -122,7 +57,6 @@ const calculateTotalNutrition = (selectedFruits, fruitsData) => {
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const specialInstructions = document.getElementById('specialInstructions').value;
-
 
     const fruitSelect1 = document.getElementById('fruitSelect1');
     const fruitSelect2 = document.getElementById('fruitSelect2');
@@ -169,7 +103,6 @@ const calculateTotalNutrition = (selectedFruits, fruitsData) => {
       fillFruitOptions(data, 'fruitSelect1');
       fillFruitOptions(data, 'fruitSelect2');
       fillFruitOptions(data, 'fruitSelect3');
-      createTable(data);
 
       const submitBtn = document.getElementById('submitBtn');
       submitBtn.addEventListener('click', displayOrderSummary);
