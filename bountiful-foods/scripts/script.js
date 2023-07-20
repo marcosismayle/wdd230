@@ -47,5 +47,5 @@ form.addEventListener("click", function (event) {
 // Order button
 
 function redirectToPage() {
-    window.location.href = "/bountiful-foods/fresh.html";
+    window.location.href = "https://marcosismayle.github.io/bountiful-foods/fresh.html";
 }
